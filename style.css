@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Merriweather", serif;
+  background-color: #fefdf3;
+}
+.wrapper {
+  width: 500px;
+  margin: 100px auto;
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 5px 5px 20px 10px #f3f1e1;
+  color: #444;
+}
+.wrapper .card-image {
+  width: 500px;
+  height: 500px;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+}
+
+.card-image img {
+  width: 500px;
+  cursor: pointer;
+}
+
+.card-image img:hover {
+  filter: grayscale(0.5);
+}
+
+#imdb-rating {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: brown;
+  border-radius: 0 0 5px 0;
+  padding: 0 10px;
+  color: white;
+}
+.card-details h1 {
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 10px;
+  letter-spacing: 3px;
+  font-size: 1.5rem;
+}
+
+#rottentomato-rating {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: brown;
+  border-radius: 0 0 5px 0;
+  padding: 0 10px;
+  color: white;
+}
+
+.card-details #movie-genre {
+  font-weight: 400;
+  color: brown;
+}
+.card-details #story {
+  text-align: justify;
+  margin-top: 10px;
+  font-weight: 300;
+  font-size: 1rem;
+}
+.card-details a {
+  text-decoration: none;
+  margin-top: 15px;
+  display: block;
+  text-transform: uppercase;
+  background-color: brown;
+  color: white;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 5px;
+  letter-spacing: 3px;
+  margin-bottom: 5px;
+}
+
+.card-details a:hover {
+  transition: 0.5sec;
+  background-color: rgb(218, 83, 83);
+  color: #f3f1e1;
+  letter-spacing: 8px;
+}
+.card-details a:active {
+  transition: 0.5sec;
+  background-color: rgb(151, 59, 59);
+  color: #f3f1e1;
+  letter-spacing: 8px;
+}
